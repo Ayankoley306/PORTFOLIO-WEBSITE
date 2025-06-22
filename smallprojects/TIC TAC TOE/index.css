@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: darkcyan;
+}
+.heading{
+    color: white;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 70vh;
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0.5;
+    
+}
+.box{
+    height: 18vh;
+    width: 18vh;
+    background-color: cadetblue;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17vh;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.reset-btn{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.msg-box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    position:absolute;
+    top: 10px;
+    backdrop-filter: blur(5px);
+    z-index: -5;
+    visibility: hidden;
+}
+.msg{
+    color: white;
+    font-size: 28px;
+}
+.newgame-btn{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px aqua;
+}
+/* Add this at the end of your index.css */
+@media only screen and (max-width: 720px) and (max-aspect-ratio: 19/9) {
+    .container{
+        height: 70vh;
+        width: 70vw;
+        margin-left: 50px;
+    }
+    .box{
+        height: 15vh;
+        width: 15vh;
+        font-size: 12vh;
+    }
+}

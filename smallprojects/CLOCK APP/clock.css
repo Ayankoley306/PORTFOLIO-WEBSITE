@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(19, 19, 77);
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+.container{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.box{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.clock{
+    display: flex;
+    flex-direction: column;
+    font-size: 120px;
+    height: 400px;
+    justify-content: center;
+    color: white;
+}
+.date{
+    display: flex;
+    height: 50px;
+    font-size: 25px;
+    color: #ffffff;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+#hour, #minute, #second, #am-pm{
+    text-shadow: 2px 2px 5px aqua;
+}
+.colon{
+  visibility: hidden;
+  position: absolute;
+}
+.clock span, .date span{
+    transition: all 0.3s ease-in-out;
+}
+#am-pm{
+  font-size: 30px;
+}
+ /* ========== Responsive Design ========== */
+
+/* 🔹 Small Devices (Mobile Portrait) */
+@media (max-width: 480px) {
+  .clock {
+    font-size: 120px;
+    height: 400px;
+  }
+
+  .date {
+    font-size: 25px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    gap: 15px;
+  }
+
+  header {
+    font-size: medium;
+    height: 60px;
+  }
+
+  #am-pm{
+    font-size: 30px;
+  }
+}
+
+/* 🔹 Medium Devices (Mobile Landscape / Small Tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .clock {
+    font-size: 80px;
+    height: 50vh;
+    width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+  }
+  .colon{
+    visibility: visible;
+    position: static;
+  }
+  .date {
+    font-size: 30px;
+  }
+
+  #am-pm{
+    font-size: 20px;
+  }
+}
+
+/* 🔹 Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .clock {
+    font-size: 140px;
+    height: 500px;
+  }
+  .date {
+    font-size: 30px;
+  }
+
+  #am-pm{
+    font-size: 35px;
+  }
+}
+/* 🔹 Desktops & Laptops */
+@media(min-width: 1025px){
+    .clock{
+        font-size: 250px;
+        height:400px;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .colon{
+    visibility: visible;
+    position: static;
+    }
+    .date{
+        font-size:30px
+    }
+  #am-pm{
+    font-size: 60px;
+  }
+}
+

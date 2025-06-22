@@ -1,0 +1,87 @@
+*{
+    margin: 0PX;
+    padding: 0PX;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: darkslategray;
+}
+.heading{
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    height: 20vh;
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.move{
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.move:hover{
+    box-shadow: 2px 2px 15px white,
+    -2px -2px 15px white;
+}
+#rock{
+    background-image: url(rock.png);
+}
+#paper{
+    background-image: url(paper.png);
+}
+#scissors{
+    background-image: url(scissors.png);
+}
+.score-heading{
+    font-size: 25px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+.score{
+    display: flex;
+    gap: 200px;
+    color: white;
+    margin: 25px;
+}
+.point{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-decoration: underline; */
+}
+.player-score, .comp-score{
+    font-size: 40px;
+    text-decoration: none;
+}
+.msg{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-size: 35px;
+    border-radius: 50px;
+}
